@@ -25,9 +25,6 @@ bot.command("begin", (ctx) => {
 });
 
 bot.on("text", (ctx) => {
-  if (details.began == false) {
-    ctx.reply("Enter /begin command to start entering your details.");
-  } else {
     switch (counter) {
       case 1:
         get.name(ctx);
@@ -61,7 +58,6 @@ bot.on("text", (ctx) => {
       default:
         ctx.reply("Enter /begin command to start entering your details.");
     }
-  }
 });
 // bot.startPolling();
 module.exports = {
