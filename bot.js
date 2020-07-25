@@ -19,9 +19,13 @@ bot.help((ctx) =>
 );
 
 bot.command("begin", (ctx) => {
-  details.began = true;
-  counter=1;
-  ctx.reply("What is your name?");
+  if( done ) {
+    ctx.reply('Your registration process is already done.'); 
+  } else {
+    details.began = true;
+    counter=1;
+    ctx.reply("What is your name?");
+  }
 });
 
 bot.on("text", (ctx) => {
