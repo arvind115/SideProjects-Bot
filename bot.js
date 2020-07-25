@@ -56,7 +56,7 @@ bot.on("text", (ctx) => {
         get.github(ctx);
         break;
       default:
-        ctx.reply("Enter /begin command to start entering your details.");
+        ctx.reply("Enter /begin command to start entering your details. Ignore if already done");
     }
 });
 // bot.startPolling();
