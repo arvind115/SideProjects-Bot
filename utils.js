@@ -130,12 +130,12 @@ const get = {
     details.languages = [...new Set(details.languages)];
     details.frameworks = [...new Set(details.frameworks)];
     const level = evaluate(details);
-    let db = await connectDB();
-    let collection = db.collection(`users`);
-    await collection.insertOne(details);
     ctx.reply(
       `Based on your skill and experience, we feel you should join the SideProject levelling process at:- Level${level}\nPlease further communicate with SideProjects admin. Happy coding!`
     );
+    let db = await connectDB();
+    let collection = db.collection(`users`);
+    await collection.insertOne(details);
     began = false;
     counter = 0;
   },
