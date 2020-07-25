@@ -20,7 +20,7 @@ bot.help((ctx) =>
 
 bot.command("begin", (ctx) => {
   details.began = true;
-  counter++;
+  counter+=1;
   ctx.reply("What is your name?");
 });
 
