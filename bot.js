@@ -63,4 +63,7 @@ bot.on("text", (ctx) => {
     }
   }
 });
-bot.startPolling();
+// bot.startPolling();
+module.exports = {
+  bot: bot,
+};
