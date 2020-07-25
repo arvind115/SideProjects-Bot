@@ -6,5 +6,5 @@ Telegram bot for SideProjects level-3 assignment.
 ##Steps to run the Project.
 1) Clone the repo 
 2) Enter your own BOT_TOKEN in _**.env**_ file
-3) run  `npm install'
-4) `npm start'
+3) run  `npm install`
+4) `npm start`
