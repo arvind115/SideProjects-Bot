@@ -19,7 +19,7 @@ bot.help((ctx) =>
 );
 
 bot.command("begin", (ctx) => {
-  if( done ) {
+  if( global.done ) {
     ctx.reply('Your registration process is already done.'); 
   } else {
     details.began = true;
