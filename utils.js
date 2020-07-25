@@ -137,6 +137,7 @@ const get = {
       `Based on your skill and experience, we feel you should join the SideProject levelling process at:- Level${level}\nPlease further communicate with SideProjects admin. Happy coding!`
     );
     began = false;
+    counter = 0;
   },
 };
 
