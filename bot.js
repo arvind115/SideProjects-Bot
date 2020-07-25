@@ -25,7 +25,7 @@ bot.command("begin", (ctx) => {
 });
 
 bot.on("text", (ctx) => {
-  if (!details.began) {
+  if (details.began == false) {
     ctx.reply("Enter /begin command to start entering your details.");
   } else {
     switch (counter) {
