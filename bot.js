@@ -20,7 +20,7 @@ bot.help((ctx) =>
 
 bot.command("begin", (ctx) => {
   details.began = true;
-  counter+=1;
+  counter=1;
   ctx.reply("What is your name?");
 });
 
@@ -28,15 +28,15 @@ bot.on("text", (ctx) => {
     switch (counter) {
       case 1:
         get.name(ctx);
-        counter++;
+        counter=2;
         break;
       case 2:
         get.college(ctx);
-        counter++;
+        counter=3;
         break;
       case 3:
         get.source(ctx);
-        counter++;
+        counter=4;
         break;
       case 4:
         get.languages(ctx);
@@ -46,11 +46,11 @@ bot.on("text", (ctx) => {
         break;
       case 6:
         get.projects(ctx);
-        counter++;
+        counter=7;
         break;
       case 7:
         get.skills(ctx);
-        counter++;
+        counter=8;
         break;
       case 8:
         get.github(ctx);
