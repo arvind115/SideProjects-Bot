@@ -80,7 +80,7 @@ const get = {
     if (ctx.message.text != "next") {
       details.languages.push(ctx.message.text);
     } else {
-      counter++;
+      counter=5;
       ctx.reply("Do you know any frameworks ? PLease list them");
       ctx.reply("Type 'next' (without quotes) when you are done.");
     }
@@ -88,7 +88,7 @@ const get = {
   //get the frameworks
   frameworks: (ctx) => {
     if (ctx.message.text === "next") {
-      counter++;
+      counter=6;
       const keyboard = [["Yes"], ["No"]];
       ctx.reply("Have you previously done any projects ?", {
         reply_markup: { keyboard, one_time_keyboard: true },
