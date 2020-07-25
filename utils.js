@@ -133,6 +133,7 @@ const get = {
     ctx.reply(
       `Based on your skill and experience, we feel you should join the SideProject levelling process at:- Level${level}\nPlease further communicate with SideProjects admin. Happy coding!`
     );
+    global.done = true;
     let db = await connectDB();
     let collection = db.collection(`users`);
     await collection.insertOne(details);
