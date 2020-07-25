@@ -56,7 +56,11 @@ bot.on("text", (ctx) => {
         get.github(ctx);
         break;
       default:
-        ctx.reply("Enter /begin command to start entering your details. Ignore if already done");
+        if( !global.done ){
+          ctx.reply("Enter /begin command to start entering your details. Ignore if already done");
+        } else {
+          ctx.reply('Your registration process is already done.'); 
+        }
     }
 });
 // bot.startPolling();
